@@ -9,7 +9,6 @@ class medianFinder{
     }
     double findMedian(){
         sort(numArray.begin(),numArray.end());
-        int n = numArray.size();
         if(numArray.size()%2==0){
             int mid1 = numArray.size()/2;
             int mid2 = (numArray.size()/2)-1;
