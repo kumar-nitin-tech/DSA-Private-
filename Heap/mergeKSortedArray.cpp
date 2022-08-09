@@ -8,6 +8,17 @@ using namespace std;
 //pair second ->second ->index number
 #define pii pair<int,pair<int,int>>
 
+vector<int> mergeKSortedArrayBrute(vector<vector<int>>&sortedArray){
+    vector<int>ans;
+    for(int i=0;i<sortedArray.size();i++){
+        for(int j=0;j<sortedArray[i].size();j++){
+            ans.push_back(sortedArray[i][j]);
+        }
+    }
+    sort(ans.begin(),ans.end());
+    return ans;
+}
+
 vector<int> mergeSortedKArray(vector<vector<int>>&sortedArray){
     vector<int>ans;
     //create a min Heap
@@ -48,7 +59,7 @@ int main(){
         }
     }
 
-    vector<int>ans = mergeSortedKArray(sortedArray);
+    vector<int>ans = mergeKSortedArrayBrute(sortedArray);
 
     for(auto i:ans){
         cout<<i<<" ";
