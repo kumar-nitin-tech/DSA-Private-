@@ -19,9 +19,8 @@ vector<vector<int>>generateSubsequenceUsingPowerSet(vector<int>&nums){
 }
 
 //Approach 2: Recursive approach
-//Time Complexity: O()
-//Space Complexity: O()
-
+//Time Complexity: O(2^n)
+//Space Complexity: O(n)
 void generateSubsequenceUsingRecursion(vector<int>&nums, int idx, vector<int>temp, int &index, vector<vector<int>>&ans){
     if(idx>=nums.size()){
         ans[index] = temp;
@@ -29,8 +28,11 @@ void generateSubsequenceUsingRecursion(vector<int>&nums, int idx, vector<int>tem
         return;
     }
     temp.push_back(nums[idx]);
+    //Take the element to subsequence
     generateSubsequenceUsingRecursion(nums,idx+1,temp,index,ans);
+    //remove the element to make another subsequnce 
     temp.pop_back();
+    //doesn't take the element 
     generateSubsequenceUsingRecursion(nums,idx+1,temp,index,ans);
 }
 
