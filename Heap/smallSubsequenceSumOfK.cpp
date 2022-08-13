@@ -29,7 +29,7 @@ int smallestSubsequenceOfKSumBrute(vector<int>&nums, int k){
             sum += ans[i][j];
         }
         int size = ans[i].size();
-        if(sum == k){
+        if(sum >= k){
             minSize = min(size,minSize);
         }
     }
@@ -53,7 +53,7 @@ int smallestSubsequenceOfKSum(vector<int>&nums, int k){
         count++;
         maxHeap.pop();
         //if the sum is equal to given sum we return the count
-        if(sum == k){
+        if(sum >= k){
             return count;
         }
     }
