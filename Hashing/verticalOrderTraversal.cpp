@@ -26,6 +26,7 @@ vector<vector<int>> verticalTraversal(node* root){
     q.push({root,{0,0}});
 
     while(!q.empty()){
+        //in place of auto we can take pair<node*,pair<int,int>> p;
         auto p = q.front();
         q.pop();
         node* temp = p.first;
