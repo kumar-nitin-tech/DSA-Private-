@@ -10,6 +10,8 @@ class graph{
     }
 };
 
+//Time Complexity: O(n)
+//Space Complexity: o(n)
 bool dfsUtil(unordered_map<int,vector<int>>&adjList, vector<bool>&visited, vector<bool>&pathVisited, int node){
     visited[node] = 1;
     pathVisited[node] = 1;
