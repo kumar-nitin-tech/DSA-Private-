@@ -1,0 +1,1 @@
+{"name":"Local: PrimsAlgorithmMST","url":"d:\\Coding\\C++\\DSA\\Graphs\\PrimsAlgorithmMST.cpp","tests":[{"id":1668502063674,"input":"6 7 \n0 1 1\n0 2 10\n1 3 5\n2 3 2\n3 4 3\n1 4 6\n4 5 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\C++\\DSA\\Graphs\\PrimsAlgorithmMST.cpp","group":"local","local":true}
