@@ -39,6 +39,7 @@ void topoLogicalSort(unordered_map<int,vector<pair<int,int>>>&adjList, int nodes
     }
 }
 
+//Time Complexity : o(n+e)
 vector<int> shortestPathDAG(unordered_map<int,vector<pair<int,int>>>&adjList, int nodes, int src){
     stack<int> s;
     topoLogicalSort(adjList,nodes,src,s);
