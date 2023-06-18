@@ -84,7 +84,7 @@ bool canPartitionTS(vector<int> &arr, int n, int k){
     
     //i==0
     //for only a[0] == target its true
-    prev[arr[0]] = true;
+    if(arr[0] <= k) prev[arr[0]] = true;
 
     //nested loop 
     for(int i=1;i<n;i++){
