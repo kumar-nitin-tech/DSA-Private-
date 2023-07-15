@@ -1,0 +1,1 @@
+{"name":"Local: FlyodWarshalAlgorithm","url":"d:\\Coding\\C++\\DSA\\Graphs\\FlyodWarshalAlgorithm.cpp","tests":[{"id":1670269754542,"input":"4\n0 2 -1 -1\n1 0 3 -1\n-1 -1 0 -1\n3 5 4 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\C++\\DSA\\Graphs\\FlyodWarshalAlgorithm.cpp","group":"local","local":true}

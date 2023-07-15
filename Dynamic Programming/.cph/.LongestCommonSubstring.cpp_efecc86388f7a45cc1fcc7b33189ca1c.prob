@@ -1,0 +1,1 @@
+{"name":"Local: LongestCommonSubstring","url":"d:\\Coding\\C++\\DSA\\Dynamic Programming\\LongestCommonSubstring.cpp","tests":[{"id":1689017771630,"input":"abcedg\nabcfghfg","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Coding\\C++\\DSA\\Dynamic Programming\\LongestCommonSubstring.cpp","group":"local","local":true}
